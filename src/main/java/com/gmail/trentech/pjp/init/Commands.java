@@ -183,7 +183,7 @@ public class Commands {
 		    .arguments(
 		    		GenericArguments.optional(new PortalElement(Text.of("name"), PortalType.PORTAL)), 
 		    		GenericArguments.optional(GenericArguments.string(Text.of("permission"))))
-		    .executor(new com.gmail.trentech.pjp.commands.portal.CMDPrice())
+		    .executor(new com.gmail.trentech.pjp.commands.portal.CMDPermission())
 		    .build();
 	
 	private CommandSpec cmdPortalCommand = CommandSpec.builder()
@@ -192,7 +192,7 @@ public class Commands {
 		    .arguments(
 		    		GenericArguments.optional(new PortalElement(Text.of("name"), PortalType.PORTAL)), 
 		    		GenericArguments.optional(GenericArguments.remainingJoinedStrings(Text.of("command"))))
-		    .executor(new com.gmail.trentech.pjp.commands.portal.CMDPrice())
+		    .executor(new com.gmail.trentech.pjp.commands.portal.CMDCommand())
 		    .build();
 	
 	private CommandSpec cmdPortalList = CommandSpec.builder()
