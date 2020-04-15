@@ -18,7 +18,7 @@ public class CMDPermission implements CommandExecutor {
 
 	@Override
 	public CommandResult execute(CommandSource src, CommandContext args) throws CommandException {
-		Help help = Help.get("portal price").get();
+		Help help = Help.get("portal permission").get();
 		
 		if (args.hasAny("help")) {		
 			help.execute(src);
